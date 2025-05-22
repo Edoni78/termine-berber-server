@@ -1,0 +1,6 @@
+@BerberTermine_HostAddress = http://localhost:5120
+
+GET {{BerberTermine_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
