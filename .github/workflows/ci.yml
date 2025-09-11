@@ -11,20 +11,19 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '8.0.x'
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
 
-     - name: Restore dependencies
-      run: dotnet restore ./server/BerberTermine.sln
+      - name: Restore dependencies
+        run: dotnet restore ./server/BerberTermine.sln
 
-    - name: Build solution
-      run: dotnet build ./server/BerberTermine.sln --no-restore
+      - name: Build solution
+        run: dotnet build ./server/BerberTermine.sln --no-restore
 
-    - name: Run tests
-      run: dotnet test ./server/BerberTermine.sln --no-build --verbosity normal
-
+      - name: Run tests
+        run: dotnet test ./server/BerberTermine.sln --no-build --verbosity normal
