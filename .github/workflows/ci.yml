@@ -20,10 +20,10 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore ./server/BerberTermine/BerberTermine.sln
+        run: dotnet restore ./server/BerberTermine.sln
 
       - name: Build solution
-        run: dotnet build ./server/BerberTermine/BerberTermine.sln --no-restore
+        run: dotnet build ./server/BerberTermine.sln --no-restore
 
       - name: Run tests
-        run: dotnet test ./server/BerberTermine/BerberTermine.sln --no-build --verbosity normal
+        run: dotnet test ./server/BerberTermine.sln --no-build --verbosity normal
