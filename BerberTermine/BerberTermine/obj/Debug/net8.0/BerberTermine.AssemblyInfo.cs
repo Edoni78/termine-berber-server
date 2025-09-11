@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BerberTermine")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84365a206adb1e7b6b72a559acf26109f8ab6496")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bcf354f394bac5dbc9e1902a090096004622042d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BerberTermine")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BerberTermine")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -51,5 +51,5 @@ app.MapControllers(); // Aktivizon controller-at
 
 app.Run();
 
-
+public partial class Program { }
 

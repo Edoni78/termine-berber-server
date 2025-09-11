@@ -6,7 +6,9 @@ C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\De
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\BerberTermine.runtimeconfig.json
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\BerberTermine.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\BerberTermine.pdb
+C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Humanizer.dll
+C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\MailKit.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Microsoft.CodeAnalysis.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Microsoft.CodeAnalysis.CSharp.dll
@@ -24,6 +26,7 @@ C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\De
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\MimeKit.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
@@ -36,6 +39,7 @@ C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\De
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\System.Composition.Hosting.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\System.Composition.Runtime.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\System.Composition.TypedParts.dll
+C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\es\Microsoft.CodeAnalysis.resources.dll
@@ -88,6 +92,7 @@ C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\De
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.csproj.AssemblyReference.cache
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.AssemblyInfoInputs.cache
@@ -95,6 +100,7 @@ C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\De
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.csproj.CoreCompileInputs.cache
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.sourcelink.json
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\scopedcss\bundle\BerberTermine.styles.css
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\staticwebassets.development.json
@@ -111,9 +117,3 @@ C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\De
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.pdb
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.genruntimeconfig.cache
 C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\ref\BerberTermine.dll
-C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
-C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\MailKit.dll
-C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\MimeKit.dll
-C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
-C:\Users\Lenovo\Desktop\Termine Berber\server\BerberTermine\BerberTermine\obj\Debug\net8.0\BerberTermine.sourcelink.json
