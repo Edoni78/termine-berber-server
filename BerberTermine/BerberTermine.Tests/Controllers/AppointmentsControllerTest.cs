@@ -14,7 +14,7 @@ public class AppointmentsControllerTests : IClassFixture<WebApplicationFactory<P
     [Fact]
     public async Task CreateAppointment_ShouldReturnOk()
     {
-        var appointment = new { Name = "Aferdita", Phone = "123456789", Time = DateTime.Today.AddDays(1) };
+        var appointment = new { Name = "Aferditaaa", Phone = "123455789", Time = DateTime.Today.AddDays(1) };
 
         var response = await _client.PostAsJsonAsync("/api/appointments", appointment);
 
