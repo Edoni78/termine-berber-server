@@ -33,7 +33,11 @@ builder.Services.AddControllers();
 
 
 var app = builder.Build();
-
+builder.WebHost.ConfigureKestrel(options =>
+{
+    var port = Environment.GetEnvironmentVariable("PORT") ?? "5120"; 
+    options.ListenAnyIP(int.Parse(port));
+});
 // Middleware
 if (app.Environment.IsDevelopment())
 {
