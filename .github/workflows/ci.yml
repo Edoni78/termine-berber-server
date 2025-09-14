@@ -20,14 +20,18 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: List files (debug)
-        run: ls -R
-
       - name: Restore dependencies
         run: dotnet restore ./BerberTermine/BerberTermine.sln
 
       - name: Build solution
-        run: dotnet build ./BerberTermine/BerberTermine.sln --no-restore --configuration Release
+        run: dotnet build ./BerberTermine/BerberTermine.sln --configuration Release --no-restore
 
       - name: Run tests
-        run: dotnet test ./BerberTermine/BerberTermine.sln --no-build
+        run: dotnet test ./BerberTermine/BerberTermine.sln --configuration Release --verbosity normal
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: '**/TestResults/*.trx'
