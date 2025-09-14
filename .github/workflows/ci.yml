@@ -21,13 +21,13 @@ jobs:
           dotnet-version: '8.0.x'
 
       - name: Restore dependencies
-        run: dotnet restore BerberTermine/BerberTermine.sln
+        run: dotnet restore BerberTermine.sln
 
       - name: Build solution
-        run: dotnet build BerberTermine/BerberTermine.sln --no-restore --configuration Release
+        run: dotnet build BerberTermine.sln --no-restore --configuration Release
 
       - name: Run tests
-        run: dotnet test BerberTermine/BerberTermine.sln --no-build --configuration Release --verbosity normal --logger "trx;LogFileName=test_results.trx"
+        run: dotnet test BerberTermine.sln --no-build --configuration Release --verbosity normal --logger "trx;LogFileName=test_results.trx"
 
       - name: Upload test results
         if: always()
