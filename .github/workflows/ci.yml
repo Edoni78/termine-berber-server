@@ -5,6 +5,7 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  workflow_dispatch:
 
 jobs:
   build-and-test:
@@ -19,11 +20,17 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore dependencies
-        run: dotnet restore ./BerberTermine/BerberTermine.sln
+      - name: Restore dependencies (API project)
+        run: dotnet restore ./BerberTermine/BerberTermine/BerberTermine.csproj
 
-      - name: Build solution
-        run: dotnet build ./BerberTermine/BerberTermine.sln --no-restore
+      - name: Build API project
+        run: dotnet build ./BerberTermine/BerberTermine/BerberTermine.csproj --no-restore
+
+      - name: Restore dependencies (Tests project)
+        run: dotnet restore ./BerberTermine.Tests/BerberTermine.Tests.csproj
+
+      - name: Build Tests project
+        run: dotnet build ./BerberTermine.Tests/BerberTermine.Tests.csproj --no-restore
 
       - name: Run tests
-        run: dotnet test ./BerberTermine/BerberTermine.sln --no-build --verbosity normal
+        run: dotnet test ./BerberTermine.Tests/BerberTermine.Tests.csproj --no-build --verbosity normal
