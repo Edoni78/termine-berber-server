@@ -40,6 +40,11 @@ jobs:
       - name: Build solution
         run: dotnet build ./BerberTermine/BerberTermine.sln --configuration Release
 
+      - name: Apply EF Core migrations
+        env:
+          ConnectionStrings__DefaultConnection: "Server=127.0.0.1;Port=3306;Database=barberdb;User=root;Password=root"
+        run: dotnet ef database update --project ./BerberTermine/BerberTermine/BerberTermine.csproj --startup-project ./BerberTermine/BerberTermine/BerberTermine.csproj
+
       - name: Run tests
         env:
           ConnectionStrings__DefaultConnection: "Server=127.0.0.1;Port=3306;Database=barberdb;User=root;Password=root"
