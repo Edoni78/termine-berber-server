@@ -11,6 +11,20 @@ jobs:
   build-and-test:
     runs-on: ubuntu-latest
 
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: root
+          MYSQL_DATABASE: barberdb
+        ports:
+          - 3306:3306
+        options: >-
+          --health-cmd="mysqladmin ping --silent"
+          --health-interval=10s
+          --health-timeout=5s
+          --health-retries=3
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
@@ -27,6 +41,8 @@ jobs:
         run: dotnet build ./BerberTermine/BerberTermine.sln --configuration Release
 
       - name: Run tests
+        env:
+          ConnectionStrings__DefaultConnection: "Server=127.0.0.1;Port=3306;Database=barberdb;User=root;Password=root"
         run: dotnet test ./BerberTermine/BerberTermine.sln --configuration Release --verbosity normal
 
       - name: Upload test results
