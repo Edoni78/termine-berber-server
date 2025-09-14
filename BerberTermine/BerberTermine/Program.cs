@@ -55,6 +55,8 @@ app.UseAuthorization();
 
 app.MapControllers(); // Aktivizon controller-at
 
+app.MapGet("/", () => Results.Redirect("/swagger"));
+
 app.Run();
 
 public partial class Program { }
