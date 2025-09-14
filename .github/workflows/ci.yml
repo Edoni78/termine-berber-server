@@ -24,7 +24,7 @@ jobs:
         run: dotnet restore ./BerberTermine/BerberTermine.sln
 
       - name: Build solution
-        run: dotnet build ./BerberTermine/BerberTermine.sln --configuration Release --no-restore
+        run: dotnet build ./BerberTermine/BerberTermine.sln --configuration Release 
 
       - name: Run tests
         run: dotnet test ./BerberTermine/BerberTermine.sln --configuration Release --verbosity normal
