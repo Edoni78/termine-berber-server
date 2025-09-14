@@ -20,19 +20,6 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      # Debug: list all files in repo
-      - name: List all files
-        run: ls -R
-
-      # Debug: list specifically BerberTermine and BerberTermine.Tests
-      - name: List test project files
-        run: |
-          echo "Listing BerberTermine folder:"
-          ls -R ./BerberTermine || true
-          echo "Listing BerberTermine.Tests folder:"
-          ls -R ./BerberTermine.Tests || true
-
-      # Try restore using the solution (nëse dështon, debug do na ndihmojë)
       - name: Restore dependencies
         run: dotnet restore ./BerberTermine/BerberTermine.sln
 
