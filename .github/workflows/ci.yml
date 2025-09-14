@@ -20,17 +20,24 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
-      - name: Restore dependencies (API project)
-        run: dotnet restore ./BerberTermine/BerberTermine/BerberTermine.csproj
+      # Debug: list all files in repo
+      - name: List all files
+        run: ls -R
 
-      - name: Build API project
-        run: dotnet build ./BerberTermine/BerberTermine/BerberTermine.csproj --no-restore
+      # Debug: list specifically BerberTermine and BerberTermine.Tests
+      - name: List test project files
+        run: |
+          echo "Listing BerberTermine folder:"
+          ls -R ./BerberTermine || true
+          echo "Listing BerberTermine.Tests folder:"
+          ls -R ./BerberTermine.Tests || true
 
-      - name: Restore dependencies (Tests project)
-        run: dotnet restore ./BerberTermine.Tests/BerberTermine.Tests.csproj
+      # Try restore using the solution (nëse dështon, debug do na ndihmojë)
+      - name: Restore dependencies
+        run: dotnet restore ./BerberTermine/BerberTermine.sln
 
-      - name: Build Tests project
-        run: dotnet build ./BerberTermine.Tests/BerberTermine.Tests.csproj --no-restore
+      - name: Build solution
+        run: dotnet build ./BerberTermine/BerberTermine.sln --no-restore
 
       - name: Run tests
-        run: dotnet test ./BerberTermine.Tests/BerberTermine.Tests.csproj --no-build --verbosity normal
+        run: dotnet test ./BerberTermine/BerberTermine.sln --no-build --verbosity normal
