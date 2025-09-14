@@ -34,6 +34,12 @@ jobs:
         with:
           dotnet-version: '8.0.x'
 
+      - name: Install EF Core tools
+        run: dotnet tool install --global dotnet-ef
+
+      - name: Add .NET tools to PATH
+        run: echo "${HOME}/.dotnet/tools" >> $GITHUB_PATH
+
       - name: Restore dependencies
         run: dotnet restore ./BerberTermine/BerberTermine.sln
 
@@ -43,7 +49,7 @@ jobs:
       - name: Apply EF Core migrations
         env:
           ConnectionStrings__DefaultConnection: "Server=127.0.0.1;Port=3306;Database=barberdb;User=root;Password=root"
-        run: dotnet ef database update --project ./BerberTermine/BerberTermine/BerberTermine.csproj --startup-project ./BerberTermine/BerberTermine/BerberTermine.csproj
+        run: dotnet ef database update --project ./BerberTermine/BerberTermine --startup-project ./BerberTermine/BerberTermine
 
       - name: Run tests
         env:
