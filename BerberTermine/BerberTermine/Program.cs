@@ -31,13 +31,15 @@ builder.Services.AddDbContext<BarberDbContext>(options =>
 
 builder.Services.AddControllers();
 
-
-var app = builder.Build();
+// ✅ Configure Kestrel BEFORE Build
+var port = Environment.GetEnvironmentVariable("PORT") ?? "5120";
 builder.WebHost.ConfigureKestrel(options =>
 {
-    var port = Environment.GetEnvironmentVariable("PORT") ?? "5120"; 
     options.ListenAnyIP(int.Parse(port));
 });
+
+var app = builder.Build();
+
 // Middleware
 if (app.Environment.IsDevelopment())
 {
@@ -56,4 +58,3 @@ app.MapControllers(); // Aktivizon controller-at
 app.Run();
 
 public partial class Program { }
-
