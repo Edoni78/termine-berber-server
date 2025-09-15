@@ -22,10 +22,10 @@ namespace BerberTermine.SeleniumTests
             _driver.Navigate().GoToUrl("http://localhost:3000");
 
             var nameInput = _driver.FindElement(By.CssSelector("input[placeholder='Shkruaj emrin']"));
-            nameInput.SendKeys("TestUser2");
+            nameInput.SendKeys("TestUser4");
 
             var phoneInput = _driver.FindElement(By.CssSelector("input[placeholder='Shkruaj numrin e telefonit']"));
-            phoneInput.SendKeys("044123956");
+            phoneInput.SendKeys("0441239568");
 
             var dateInput = _driver.FindElement(By.CssSelector("input[placeholder='Kliko për të zgjedhur']"));
             dateInput.Click();
@@ -34,7 +34,7 @@ namespace BerberTermine.SeleniumTests
 
             var timeSelect = _driver.FindElement(By.CssSelector("select.form-select"));
             var options = timeSelect.FindElements(By.TagName("option"));
-            options[3].Click();
+            options[8].Click();
 
             var submitBtn = _driver.FindElement(By.CssSelector("button.btn"));
             submitBtn.Click();
